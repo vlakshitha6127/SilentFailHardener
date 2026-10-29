@@ -1,0 +1,1872 @@
+{
+  "status": "completed",
+  "pilot_episodes_count": 70,
+  "elapsed_total_seconds": 0.0389714241027832,
+  "baseline_metrics": {
+    "patch_id": "baseline",
+    "total_runs": 10,
+    "correct_completion": [
+      0.3,
+      0.1078,
+      0.6032
+    ],
+    "duplicate_action_rate": [
+      0.1,
+      0.0179,
+      0.4041
+    ],
+    "silent_failure_rate": [
+      0.2,
+      0.0567,
+      0.5098
+    ],
+    "conditional_false_success_rate": [
+      0.5714,
+      0.2505,
+      0.8418
+    ],
+    "legitimate_completion_rate": [
+      0.6667,
+      0.2077,
+      0.9385
+    ],
+    "missed_action_rate": [
+      0.1,
+      0.0179,
+      0.4041
+    ],
+    "incorrect_completion_rate": [
+      0.7,
+      0.3968,
+      0.8922
+    ],
+    "over_suppression_rate": [
+      0.0,
+      0.0,
+      0.2775
+    ],
+    "claim_uncertain_share": 0.0,
+    "mean_steps": 2.9,
+    "mean_tokens": 601.0,
+    "counts": {
+      "correct": 3,
+      "duplicate": 1,
+      "silent_fail": 2,
+      "total": 10,
+      "cond_failed_total": 7
+    }
+  },
+  "metrics_by_config": {
+    "baseline": {
+      "patch_id": "baseline",
+      "total_runs": 10,
+      "correct_completion": [
+        0.3,
+        0.1078,
+        0.6032
+      ],
+      "duplicate_action_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "silent_failure_rate": [
+        0.2,
+        0.0567,
+        0.5098
+      ],
+      "conditional_false_success_rate": [
+        0.5714,
+        0.2505,
+        0.8418
+      ],
+      "legitimate_completion_rate": [
+        0.6667,
+        0.2077,
+        0.9385
+      ],
+      "missed_action_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "incorrect_completion_rate": [
+        0.7,
+        0.3968,
+        0.8922
+      ],
+      "over_suppression_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "claim_uncertain_share": 0.0,
+      "mean_steps": 2.9,
+      "mean_tokens": 601.0,
+      "counts": {
+        "correct": 3,
+        "duplicate": 1,
+        "silent_fail": 2,
+        "total": 10,
+        "cond_failed_total": 7
+      }
+    },
+    "patch_idempotency_key": {
+      "patch_id": "patch_idempotency_key",
+      "total_runs": 10,
+      "correct_completion": [
+        0.3,
+        0.1078,
+        0.6032
+      ],
+      "duplicate_action_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "silent_failure_rate": [
+        0.2,
+        0.0567,
+        0.5098
+      ],
+      "conditional_false_success_rate": [
+        1.0,
+        0.6457,
+        1.0
+      ],
+      "legitimate_completion_rate": [
+        0.6667,
+        0.2077,
+        0.9385
+      ],
+      "missed_action_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "incorrect_completion_rate": [
+        0.7,
+        0.3968,
+        0.8922
+      ],
+      "over_suppression_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "claim_uncertain_share": 0.0,
+      "mean_steps": 3.2,
+      "mean_tokens": 632.5,
+      "counts": {
+        "correct": 3,
+        "duplicate": 1,
+        "silent_fail": 2,
+        "total": 10,
+        "cond_failed_total": 7
+      }
+    },
+    "patch_read_back_verify": {
+      "patch_id": "patch_read_back_verify",
+      "total_runs": 10,
+      "correct_completion": [
+        0.3,
+        0.1078,
+        0.6032
+      ],
+      "duplicate_action_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "silent_failure_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "conditional_false_success_rate": [
+        1.0,
+        0.6457,
+        1.0
+      ],
+      "legitimate_completion_rate": [
+        0.6667,
+        0.2077,
+        0.9385
+      ],
+      "missed_action_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "incorrect_completion_rate": [
+        0.7,
+        0.3968,
+        0.8922
+      ],
+      "over_suppression_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "claim_uncertain_share": 0.0,
+      "mean_steps": 3.0,
+      "mean_tokens": 600.5,
+      "counts": {
+        "correct": 3,
+        "duplicate": 1,
+        "silent_fail": 1,
+        "total": 10,
+        "cond_failed_total": 7
+      }
+    },
+    "patch_retry_policy": {
+      "patch_id": "patch_retry_policy",
+      "total_runs": 10,
+      "correct_completion": [
+        0.3,
+        0.1078,
+        0.6032
+      ],
+      "duplicate_action_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "silent_failure_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "conditional_false_success_rate": [
+        1.0,
+        0.6457,
+        1.0
+      ],
+      "legitimate_completion_rate": [
+        0.6667,
+        0.2077,
+        0.9385
+      ],
+      "missed_action_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "incorrect_completion_rate": [
+        0.7,
+        0.3968,
+        0.8922
+      ],
+      "over_suppression_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "claim_uncertain_share": 0.0,
+      "mean_steps": 3.0,
+      "mean_tokens": 600.5,
+      "counts": {
+        "correct": 3,
+        "duplicate": 1,
+        "silent_fail": 1,
+        "total": 10,
+        "cond_failed_total": 7
+      }
+    },
+    "patch_combo_idemp_readback": {
+      "patch_id": "patch_combo_idemp_readback",
+      "total_runs": 10,
+      "correct_completion": [
+        0.3,
+        0.1078,
+        0.6032
+      ],
+      "duplicate_action_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "silent_failure_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "conditional_false_success_rate": [
+        1.0,
+        0.6457,
+        1.0
+      ],
+      "legitimate_completion_rate": [
+        0.6667,
+        0.2077,
+        0.9385
+      ],
+      "missed_action_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "incorrect_completion_rate": [
+        0.7,
+        0.3968,
+        0.8922
+      ],
+      "over_suppression_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "claim_uncertain_share": 0.0,
+      "mean_steps": 3.0,
+      "mean_tokens": 600.5,
+      "counts": {
+        "correct": 3,
+        "duplicate": 1,
+        "silent_fail": 1,
+        "total": 10,
+        "cond_failed_total": 7
+      }
+    },
+    "control_refuse_all": {
+      "patch_id": "control_refuse_all",
+      "total_runs": 10,
+      "correct_completion": [
+        0.2,
+        0.0567,
+        0.5098
+      ],
+      "duplicate_action_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "silent_failure_rate": [
+        0.0,
+        0.0,
+        0.2775
+      ],
+      "conditional_false_success_rate": [
+        0.0,
+        0.0,
+        0.3244
+      ],
+      "legitimate_completion_rate": [
+        0.0,
+        0.0,
+        0.5615
+      ],
+      "missed_action_rate": [
+        0.8,
+        0.4902,
+        0.9433
+      ],
+      "incorrect_completion_rate": [
+        0.8,
+        0.4902,
+        0.9433
+      ],
+      "over_suppression_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "claim_uncertain_share": 0.0,
+      "mean_steps": 4.0,
+      "mean_tokens": 810.0,
+      "counts": {
+        "correct": 2,
+        "duplicate": 0,
+        "silent_fail": 0,
+        "total": 10,
+        "cond_failed_total": 8
+      }
+    },
+    "control_blind_dedupe": {
+      "patch_id": "control_blind_dedupe",
+      "total_runs": 10,
+      "correct_completion": [
+        0.2,
+        0.0567,
+        0.5098
+      ],
+      "duplicate_action_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "silent_failure_rate": [
+        0.3,
+        0.1078,
+        0.6032
+      ],
+      "conditional_false_success_rate": [
+        1.0,
+        0.6756,
+        1.0
+      ],
+      "legitimate_completion_rate": [
+        0.3333,
+        0.0615,
+        0.7923
+      ],
+      "missed_action_rate": [
+        0.2,
+        0.0567,
+        0.5098
+      ],
+      "incorrect_completion_rate": [
+        0.8,
+        0.4902,
+        0.9433
+      ],
+      "over_suppression_rate": [
+        0.1,
+        0.0179,
+        0.4041
+      ],
+      "claim_uncertain_share": 0.0,
+      "mean_steps": 3.2,
+      "mean_tokens": 632.5,
+      "counts": {
+        "correct": 2,
+        "duplicate": 1,
+        "silent_fail": 3,
+        "total": 10,
+        "cond_failed_total": 8
+      }
+    }
+  },
+  "race_summary": {
+    "control_blind_dedupe": {
+      "spec": {
+        "patch_id": "control_blind_dedupe",
+        "name": "Control: Blind Deduplication",
+        "type": "control.blind_dedupe",
+        "description": "Suppresses all repeat actions on an order. Proves legitimate repeat and empty-200 failure detection.",
+        "is_control": true,
+        "config": {}
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "Regression Guard: Correct completion dropped from 30.0% to 20.0% (tolerance: -2.0%)",
+        "Legitimate-Completion Guard: Legitimate completion dropped from 66.7% to 33.3%",
+        "False Success Guard: Silent failure / false success rate increased from 20.0% to 30.0%",
+        "Missed Action Guard: Missed action rate increased from 10.0% to 20.0%",
+        "Over-Suppression Guard: Candidate exhibits over-suppression rate of 10.0%",
+        "Incorrect Completion Guard: Incorrect completion increased from 70.0% to 80.0%"
+      ],
+      "duplicate_action_rate": 0.1,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 0.2,
+      "legitimate_completion": 0.3333,
+      "metrics": {
+        "patch_id": "control_blind_dedupe",
+        "total_runs": 10,
+        "correct_completion": [
+          0.2,
+          0.0567,
+          0.5098
+        ],
+        "duplicate_action_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "silent_failure_rate": [
+          0.3,
+          0.1078,
+          0.6032
+        ],
+        "conditional_false_success_rate": [
+          1.0,
+          0.6756,
+          1.0
+        ],
+        "legitimate_completion_rate": [
+          0.3333,
+          0.0615,
+          0.7923
+        ],
+        "missed_action_rate": [
+          0.2,
+          0.0567,
+          0.5098
+        ],
+        "incorrect_completion_rate": [
+          0.8,
+          0.4902,
+          0.9433
+        ],
+        "over_suppression_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.2,
+        "mean_tokens": 632.5,
+        "counts": {
+          "correct": 2,
+          "duplicate": 1,
+          "silent_fail": 3,
+          "total": 10,
+          "cond_failed_total": 8
+        }
+      }
+    },
+    "control_refuse_all": {
+      "spec": {
+        "patch_id": "control_refuse_all",
+        "name": "Control: Refuse All Refunds",
+        "type": "control.refuse_all",
+        "description": "Negative control that refuses every refund. Proves regression and legitimate-completion guards.",
+        "is_control": true,
+        "config": {}
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "Regression Guard: Correct completion dropped from 30.0% to 20.0% (tolerance: -2.0%)",
+        "Legitimate-Completion Guard: Legitimate completion dropped from 66.7% to 0.0%",
+        "Missed Action Guard: Missed action rate increased from 10.0% to 80.0%",
+        "Over-Suppression Guard: Candidate exhibits over-suppression rate of 10.0%",
+        "Incorrect Completion Guard: Incorrect completion increased from 70.0% to 80.0%"
+      ],
+      "duplicate_action_rate": 0.0,
+      "duplicate_reduction": 0.1,
+      "correct_completion": 0.2,
+      "legitimate_completion": 0.0,
+      "metrics": {
+        "patch_id": "control_refuse_all",
+        "total_runs": 10,
+        "correct_completion": [
+          0.2,
+          0.0567,
+          0.5098
+        ],
+        "duplicate_action_rate": [
+          0.0,
+          0.0,
+          0.2775
+        ],
+        "silent_failure_rate": [
+          0.0,
+          0.0,
+          0.2775
+        ],
+        "conditional_false_success_rate": [
+          0.0,
+          0.0,
+          0.3244
+        ],
+        "legitimate_completion_rate": [
+          0.0,
+          0.0,
+          0.5615
+        ],
+        "missed_action_rate": [
+          0.8,
+          0.4902,
+          0.9433
+        ],
+        "incorrect_completion_rate": [
+          0.8,
+          0.4902,
+          0.9433
+        ],
+        "over_suppression_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 4.0,
+        "mean_tokens": 810.0,
+        "counts": {
+          "correct": 2,
+          "duplicate": 0,
+          "silent_fail": 0,
+          "total": 10,
+          "cond_failed_total": 8
+        }
+      }
+    },
+    "patch_combo_idemp_readback": {
+      "spec": {
+        "patch_id": "patch_combo_idemp_readback",
+        "name": "Combo: Idempotency Key + Read-Back Verification",
+        "type": "combo.idempotency_and_read_back",
+        "description": "Combines idempotency keys with active state read-back for compound fault tolerance.",
+        "is_control": false,
+        "config": {}
+      },
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_action_rate": 0.1,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 0.3,
+      "legitimate_completion": 0.6667,
+      "metrics": {
+        "patch_id": "patch_combo_idemp_readback",
+        "total_runs": 10,
+        "correct_completion": [
+          0.3,
+          0.1078,
+          0.6032
+        ],
+        "duplicate_action_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "silent_failure_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "conditional_false_success_rate": [
+          1.0,
+          0.6457,
+          1.0
+        ],
+        "legitimate_completion_rate": [
+          0.6667,
+          0.2077,
+          0.9385
+        ],
+        "missed_action_rate": [
+          0.0,
+          0.0,
+          0.2775
+        ],
+        "incorrect_completion_rate": [
+          0.7,
+          0.3968,
+          0.8922
+        ],
+        "over_suppression_rate": [
+          0.0,
+          0.0,
+          0.2775
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.0,
+        "mean_tokens": 600.5,
+        "counts": {
+          "correct": 3,
+          "duplicate": 1,
+          "silent_fail": 1,
+          "total": 10,
+          "cond_failed_total": 7
+        }
+      }
+    },
+    "patch_idempotency_key": {
+      "spec": {
+        "patch_id": "patch_idempotency_key",
+        "name": "Deterministic Idempotency Key Wrapper",
+        "type": "wrapper.idempotency_key",
+        "description": "Injects a deterministic idempotency key per (order, action, amount) into mutating tool calls.",
+        "is_control": false,
+        "config": {}
+      },
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_action_rate": 0.1,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 0.3,
+      "legitimate_completion": 0.6667,
+      "metrics": {
+        "patch_id": "patch_idempotency_key",
+        "total_runs": 10,
+        "correct_completion": [
+          0.3,
+          0.1078,
+          0.6032
+        ],
+        "duplicate_action_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "silent_failure_rate": [
+          0.2,
+          0.0567,
+          0.5098
+        ],
+        "conditional_false_success_rate": [
+          1.0,
+          0.6457,
+          1.0
+        ],
+        "legitimate_completion_rate": [
+          0.6667,
+          0.2077,
+          0.9385
+        ],
+        "missed_action_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "incorrect_completion_rate": [
+          0.7,
+          0.3968,
+          0.8922
+        ],
+        "over_suppression_rate": [
+          0.0,
+          0.0,
+          0.2775
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.2,
+        "mean_tokens": 632.5,
+        "counts": {
+          "correct": 3,
+          "duplicate": 1,
+          "silent_fail": 2,
+          "total": 10,
+          "cond_failed_total": 7
+        }
+      }
+    },
+    "patch_read_back_verify": {
+      "spec": {
+        "patch_id": "patch_read_back_verify",
+        "name": "Read-Back Verification Wrapper",
+        "type": "wrapper.read_back_verify",
+        "description": "Inspects world state after timeout/empty response to confirm whether side effect completed.",
+        "is_control": false,
+        "config": {}
+      },
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_action_rate": 0.1,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 0.3,
+      "legitimate_completion": 0.6667,
+      "metrics": {
+        "patch_id": "patch_read_back_verify",
+        "total_runs": 10,
+        "correct_completion": [
+          0.3,
+          0.1078,
+          0.6032
+        ],
+        "duplicate_action_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "silent_failure_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "conditional_false_success_rate": [
+          1.0,
+          0.6457,
+          1.0
+        ],
+        "legitimate_completion_rate": [
+          0.6667,
+          0.2077,
+          0.9385
+        ],
+        "missed_action_rate": [
+          0.0,
+          0.0,
+          0.2775
+        ],
+        "incorrect_completion_rate": [
+          0.7,
+          0.3968,
+          0.8922
+        ],
+        "over_suppression_rate": [
+          0.0,
+          0.0,
+          0.2775
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.0,
+        "mean_tokens": 600.5,
+        "counts": {
+          "correct": 3,
+          "duplicate": 1,
+          "silent_fail": 1,
+          "total": 10,
+          "cond_failed_total": 7
+        }
+      }
+    },
+    "patch_retry_policy": {
+      "spec": {
+        "patch_id": "patch_retry_policy",
+        "name": "State-Checked Retry Policy Wrapper",
+        "type": "wrapper.retry_policy",
+        "description": "On timeout/empty-200, looks up a refund recorded under the operation's stable idempotency key before reporting the outcome; retries reuse the same key.",
+        "is_control": false,
+        "config": {}
+      },
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_action_rate": 0.1,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 0.3,
+      "legitimate_completion": 0.6667,
+      "metrics": {
+        "patch_id": "patch_retry_policy",
+        "total_runs": 10,
+        "correct_completion": [
+          0.3,
+          0.1078,
+          0.6032
+        ],
+        "duplicate_action_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "silent_failure_rate": [
+          0.1,
+          0.0179,
+          0.4041
+        ],
+        "conditional_false_success_rate": [
+          1.0,
+          0.6457,
+          1.0
+        ],
+        "legitimate_completion_rate": [
+          0.6667,
+          0.2077,
+          0.9385
+        ],
+        "missed_action_rate": [
+          0.0,
+          0.0,
+          0.2775
+        ],
+        "incorrect_completion_rate": [
+          0.7,
+          0.3968,
+          0.8922
+        ],
+        "over_suppression_rate": [
+          0.0,
+          0.0,
+          0.2775
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.0,
+        "mean_tokens": 600.5,
+        "counts": {
+          "correct": 3,
+          "duplicate": 1,
+          "silent_fail": 1,
+          "total": 10,
+          "cond_failed_total": 7
+        }
+      }
+    }
+  },
+  "winning_patch": {
+    "patch_id": "patch_retry_policy",
+    "name": "State-Checked Retry Policy Wrapper",
+    "type": "wrapper.retry_policy",
+    "description": "On timeout/empty-200, looks up a refund recorded under the operation's stable idempotency key before reporting the outcome; retries reuse the same key.",
+    "is_control": false,
+    "config": {}
+  },
+  "episodes": [
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_01",
+      "category": "no_fault_control",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0010292530059814453,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_02",
+      "category": "no_fault_control",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_03",
+      "category": "ineligible_already_refunded",
+      "is_correct": false,
+      "duplicate_action": true,
+      "silent_failure": true,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_04",
+      "category": "ineligible_already_refunded",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 1,
+      "tokens_in": 250,
+      "tokens_out": 80
+    },
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_05",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 490,
+      "tokens_out": 160
+    },
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_06",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 490,
+      "tokens_out": 160
+    },
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_07",
+      "category": "empty_200_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_08",
+      "category": "empty_200_not_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": true,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_09",
+      "category": "legitimate_repeat",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "baseline",
+      "scenario_id": "scen_pilot_10",
+      "category": "compound_faults",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0010159015655517578,
+      "steps": 3,
+      "tokens_in": 490,
+      "tokens_out": 160
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_01",
+      "category": "no_fault_control",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_02",
+      "category": "no_fault_control",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_03",
+      "category": "ineligible_already_refunded",
+      "is_correct": false,
+      "duplicate_action": true,
+      "silent_failure": true,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_04",
+      "category": "ineligible_already_refunded",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 1,
+      "tokens_in": 250,
+      "tokens_out": 80
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_05",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_06",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_07",
+      "category": "empty_200_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_08",
+      "category": "empty_200_not_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": true,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_09",
+      "category": "legitimate_repeat",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0014798641204833984,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_idempotency_key",
+      "scenario_id": "scen_pilot_10",
+      "category": "compound_faults",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0010180473327636719,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_01",
+      "category": "no_fault_control",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0009980201721191406,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_02",
+      "category": "no_fault_control",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0009951591491699219,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_03",
+      "category": "ineligible_already_refunded",
+      "is_correct": false,
+      "duplicate_action": true,
+      "silent_failure": true,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_04",
+      "category": "ineligible_already_refunded",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 1,
+      "tokens_in": 250,
+      "tokens_out": 80
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_05",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.000997781753540039,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_06",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_07",
+      "category": "empty_200_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_08",
+      "category": "empty_200_not_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_09",
+      "category": "legitimate_repeat",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_read_back_verify",
+      "scenario_id": "scen_pilot_10",
+      "category": "compound_faults",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_01",
+      "category": "no_fault_control",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_02",
+      "category": "no_fault_control",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_03",
+      "category": "ineligible_already_refunded",
+      "is_correct": false,
+      "duplicate_action": true,
+      "silent_failure": true,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_04",
+      "category": "ineligible_already_refunded",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 1,
+      "tokens_in": 250,
+      "tokens_out": 80
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_05",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_06",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_07",
+      "category": "empty_200_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0010089874267578125,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_08",
+      "category": "empty_200_not_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_09",
+      "category": "legitimate_repeat",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_retry_policy",
+      "scenario_id": "scen_pilot_10",
+      "category": "compound_faults",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_01",
+      "category": "no_fault_control",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_02",
+      "category": "no_fault_control",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.000997781753540039,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_03",
+      "category": "ineligible_already_refunded",
+      "is_correct": false,
+      "duplicate_action": true,
+      "silent_failure": true,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_04",
+      "category": "ineligible_already_refunded",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 1,
+      "tokens_in": 250,
+      "tokens_out": 80
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_05",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_06",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_07",
+      "category": "empty_200_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_08",
+      "category": "empty_200_not_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_09",
+      "category": "legitimate_repeat",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.000997781753540039,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "patch_combo_idemp_readback",
+      "scenario_id": "scen_pilot_10",
+      "category": "compound_faults",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_01",
+      "category": "no_fault_control",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 610,
+      "tokens_out": 200
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_02",
+      "category": "no_fault_control",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 610,
+      "tokens_out": 200
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_03",
+      "category": "ineligible_already_refunded",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 610,
+      "tokens_out": 200
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_04",
+      "category": "ineligible_already_refunded",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 1,
+      "tokens_in": 250,
+      "tokens_out": 80
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_05",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 610,
+      "tokens_out": 200
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_06",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 610,
+      "tokens_out": 200
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_07",
+      "category": "empty_200_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 610,
+      "tokens_out": 200
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_08",
+      "category": "empty_200_not_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 610,
+      "tokens_out": 200
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_09",
+      "category": "legitimate_repeat",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": true,
+      "over_suppression": true,
+      "elapsed_seconds": 0.0,
+      "steps": 7,
+      "tokens_in": 970,
+      "tokens_out": 320
+    },
+    {
+      "config": "control_refuse_all",
+      "scenario_id": "scen_pilot_10",
+      "category": "compound_faults",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 610,
+      "tokens_out": 200
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_01",
+      "category": "no_fault_control",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_02",
+      "category": "no_fault_control",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_03",
+      "category": "ineligible_already_refunded",
+      "is_correct": false,
+      "duplicate_action": true,
+      "silent_failure": true,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_04",
+      "category": "ineligible_already_refunded",
+      "is_correct": true,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 1,
+      "tokens_in": 250,
+      "tokens_out": 80
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_05",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_06",
+      "category": "timeout_after_success",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_07",
+      "category": "empty_200_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_08",
+      "category": "empty_200_not_applied",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": true,
+      "missed_action": true,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 3,
+      "tokens_in": 450,
+      "tokens_out": 145
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_09",
+      "category": "legitimate_repeat",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": true,
+      "missed_action": true,
+      "over_suppression": true,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    },
+    {
+      "config": "control_blind_dedupe",
+      "scenario_id": "scen_pilot_10",
+      "category": "compound_faults",
+      "is_correct": false,
+      "duplicate_action": false,
+      "silent_failure": false,
+      "missed_action": false,
+      "over_suppression": false,
+      "elapsed_seconds": 0.0,
+      "steps": 4,
+      "tokens_in": 570,
+      "tokens_out": 185
+    }
+  ],
+  "execution_metadata": {
+    "temperature": 0.0,
+    "pilot_type": "70_episode_controlled_offline_pilot",
+    "model_status": "deterministic_reference_naive_agent",
+    "fallback_provenance": "deterministic_verified_candidate_pool",
+    "tolerance": 0.02,
+    "max_cost_factor": 1.8
+  }
+}

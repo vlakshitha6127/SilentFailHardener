@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+env/
+venv/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment and Secrets
+.env
+*.local
+credentials.json
+token.json
+
+# Data / Runs / Shards
+data/ledgers/
+data/runs/
+*.log
+.DS_Store
+
+# Generated evaluation evidence and temporary run outputs
+artifacts/offline_pilot/
+tmp/
+temp/
+runs/
+outputs/
+evaluation_outputs/
+data/demo/
+
+# Local session and tool state
+.copilot/
+.claude/

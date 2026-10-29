@@ -1,0 +1,6 @@
+{
+  "latency_ms": 1100.34,
+  "measured_rps": 0.91,
+  "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "status": "connected"
+}

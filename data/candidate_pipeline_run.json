@@ -1,0 +1,840 @@
+{
+  "status": "completed",
+  "progress": 100,
+  "gate_g0": {
+    "status": "local_simulation",
+    "connected": false,
+    "reason": "NEBIUS_API_KEY not configured or offline. Running on local simulation engine.",
+    "endpoint": "https://api.tokenfactory.nebius.com/v1",
+    "measured_rps": null,
+    "latency_ms": null,
+    "note": "Local deterministic simulation mode; remote Nebius call was not performed."
+  },
+  "baseline_metrics": {
+    "patch_id": "baseline",
+    "total_runs": 50,
+    "correct_completion": [
+      0.62,
+      0.4815,
+      0.7414
+    ],
+    "duplicate_action_rate": [
+      0.0,
+      0.0,
+      0.0713
+    ],
+    "silent_failure_rate": [
+      0.12,
+      0.0562,
+      0.238
+    ],
+    "conditional_false_success_rate": [
+      0.3158,
+      0.1536,
+      0.5399
+    ],
+    "legitimate_completion_rate": [
+      1.0,
+      0.7847,
+      1.0
+    ],
+    "missed_action_rate": [
+      0.12,
+      0.0562,
+      0.238
+    ],
+    "incorrect_completion_rate": [
+      0.38,
+      0.2586,
+      0.5185
+    ],
+    "over_suppression_rate": [
+      0.0,
+      0.0,
+      0.0713
+    ],
+    "claim_uncertain_share": 0.0,
+    "mean_steps": 3.1,
+    "mean_tokens": 626.4,
+    "counts": {
+      "correct": 31,
+      "duplicate": 0,
+      "silent_fail": 6,
+      "total": 50,
+      "cond_failed_total": 19
+    }
+  },
+  "race_summary": {
+    "control_blind_dedupe": {
+      "spec": {
+        "patch_id": "control_blind_dedupe",
+        "name": "Control: Blind Deduplication",
+        "type": "control.blind_dedupe",
+        "description": "Suppresses all repeat actions on an order. Proves legitimate repeat and empty-200 failure detection.",
+        "is_control": true,
+        "config": {}
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "Legitimate-Completion Guard: Legitimate completion dropped from 100.0% to 50.0%",
+        "False Success Guard: Silent failure / false success rate increased from 12.0% to 26.0%",
+        "Missed Action Guard: Missed action rate increased from 12.0% to 26.0%",
+        "Over-Suppression Guard: Candidate exhibits over-suppression rate of 14.0%"
+      ],
+      "duplicate_action_rate": 0.0,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 0.74,
+      "legitimate_completion": 0.5,
+      "metrics": {
+        "patch_id": "control_blind_dedupe",
+        "total_runs": 50,
+        "correct_completion": [
+          0.74,
+          0.6045,
+          0.8413
+        ],
+        "duplicate_action_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "silent_failure_rate": [
+          0.26,
+          0.1587,
+          0.3955
+        ],
+        "conditional_false_success_rate": [
+          1.0,
+          0.7719,
+          1.0
+        ],
+        "legitimate_completion_rate": [
+          0.5,
+          0.268,
+          0.732
+        ],
+        "missed_action_rate": [
+          0.26,
+          0.1587,
+          0.3955
+        ],
+        "incorrect_completion_rate": [
+          0.26,
+          0.1587,
+          0.3955
+        ],
+        "over_suppression_rate": [
+          0.14,
+          0.0695,
+          0.2619
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.36,
+        "mean_tokens": 653.7,
+        "counts": {
+          "correct": 37,
+          "duplicate": 0,
+          "silent_fail": 13,
+          "total": 50,
+          "cond_failed_total": 13
+        }
+      }
+    },
+    "control_refuse_all": {
+      "spec": {
+        "patch_id": "control_refuse_all",
+        "name": "Control: Refuse All Refunds",
+        "type": "control.refuse_all",
+        "description": "Negative control that refuses every refund. Proves regression and legitimate-completion guards.",
+        "is_control": true,
+        "config": {}
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "Regression Guard: Correct completion dropped from 62.0% to 2.0% (tolerance: -2.0%)",
+        "Legitimate-Completion Guard: Legitimate completion dropped from 100.0% to 0.0%",
+        "Missed Action Guard: Missed action rate increased from 12.0% to 98.0%",
+        "Over-Suppression Guard: Candidate exhibits over-suppression rate of 14.0%",
+        "Incorrect Completion Guard: Incorrect completion increased from 38.0% to 98.0%"
+      ],
+      "duplicate_action_rate": 0.0,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 0.02,
+      "legitimate_completion": 0.0,
+      "metrics": {
+        "patch_id": "control_refuse_all",
+        "total_runs": 50,
+        "correct_completion": [
+          0.02,
+          0.0035,
+          0.105
+        ],
+        "duplicate_action_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "silent_failure_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "conditional_false_success_rate": [
+          0.0,
+          0.0,
+          0.0727
+        ],
+        "legitimate_completion_rate": [
+          0.0,
+          0.0,
+          0.2153
+        ],
+        "missed_action_rate": [
+          0.98,
+          0.895,
+          0.9965
+        ],
+        "incorrect_completion_rate": [
+          0.98,
+          0.895,
+          0.9965
+        ],
+        "over_suppression_rate": [
+          0.14,
+          0.0695,
+          0.2619
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 4.36,
+        "mean_tokens": 867.6,
+        "counts": {
+          "correct": 1,
+          "duplicate": 0,
+          "silent_fail": 0,
+          "total": 50,
+          "cond_failed_total": 49
+        }
+      }
+    },
+    "patch_combo_idemp_readback": {
+      "spec": {
+        "patch_id": "patch_combo_idemp_readback",
+        "name": "Combo: Idempotency Key + Read-Back Verification",
+        "type": "combo.idempotency_and_read_back",
+        "description": "Combines idempotency keys with active state read-back for compound fault tolerance.",
+        "is_control": false,
+        "config": {}
+      },
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_action_rate": 0.0,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 1.0,
+      "legitimate_completion": 1.0,
+      "metrics": {
+        "patch_id": "patch_combo_idemp_readback",
+        "total_runs": 50,
+        "correct_completion": [
+          1.0,
+          0.9287,
+          1.0
+        ],
+        "duplicate_action_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "silent_failure_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "conditional_false_success_rate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "legitimate_completion_rate": [
+          1.0,
+          0.7847,
+          1.0
+        ],
+        "missed_action_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "incorrect_completion_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "over_suppression_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.22,
+        "mean_tokens": 631.3,
+        "counts": {
+          "correct": 50,
+          "duplicate": 0,
+          "silent_fail": 0,
+          "total": 50,
+          "cond_failed_total": 0
+        }
+      }
+    },
+    "patch_idempotency_key": {
+      "spec": {
+        "patch_id": "patch_idempotency_key",
+        "name": "Deterministic Idempotency Key Wrapper",
+        "type": "wrapper.idempotency_key",
+        "description": "Injects a deterministic idempotency key per (order, action, amount) into mutating tool calls.",
+        "is_control": false,
+        "config": {}
+      },
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_action_rate": 0.0,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 0.88,
+      "legitimate_completion": 1.0,
+      "metrics": {
+        "patch_id": "patch_idempotency_key",
+        "total_runs": 50,
+        "correct_completion": [
+          0.88,
+          0.762,
+          0.9438
+        ],
+        "duplicate_action_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "silent_failure_rate": [
+          0.12,
+          0.0562,
+          0.238
+        ],
+        "conditional_false_success_rate": [
+          1.0,
+          0.6097,
+          1.0
+        ],
+        "legitimate_completion_rate": [
+          1.0,
+          0.7847,
+          1.0
+        ],
+        "missed_action_rate": [
+          0.12,
+          0.0562,
+          0.238
+        ],
+        "incorrect_completion_rate": [
+          0.12,
+          0.0562,
+          0.238
+        ],
+        "over_suppression_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.36,
+        "mean_tokens": 653.7,
+        "counts": {
+          "correct": 44,
+          "duplicate": 0,
+          "silent_fail": 6,
+          "total": 50,
+          "cond_failed_total": 6
+        }
+      }
+    },
+    "patch_read_back_verify": {
+      "spec": {
+        "patch_id": "patch_read_back_verify",
+        "name": "Read-Back Verification Wrapper",
+        "type": "wrapper.read_back_verify",
+        "description": "Inspects world state after timeout/empty response to confirm whether side effect completed.",
+        "is_control": false,
+        "config": {}
+      },
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_action_rate": 0.0,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 1.0,
+      "legitimate_completion": 1.0,
+      "metrics": {
+        "patch_id": "patch_read_back_verify",
+        "total_runs": 50,
+        "correct_completion": [
+          1.0,
+          0.9287,
+          1.0
+        ],
+        "duplicate_action_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "silent_failure_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "conditional_false_success_rate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "legitimate_completion_rate": [
+          1.0,
+          0.7847,
+          1.0
+        ],
+        "missed_action_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "incorrect_completion_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "over_suppression_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.22,
+        "mean_tokens": 631.3,
+        "counts": {
+          "correct": 50,
+          "duplicate": 0,
+          "silent_fail": 0,
+          "total": 50,
+          "cond_failed_total": 0
+        }
+      }
+    },
+    "patch_retry_policy": {
+      "spec": {
+        "patch_id": "patch_retry_policy",
+        "name": "State-Checked Retry Policy Wrapper",
+        "type": "wrapper.retry_policy",
+        "description": "On timeout/empty-200, looks up a refund recorded under the operation's stable idempotency key before reporting the outcome; retries reuse the same key.",
+        "is_control": false,
+        "config": {}
+      },
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_action_rate": 0.0,
+      "duplicate_reduction": 0.0,
+      "correct_completion": 1.0,
+      "legitimate_completion": 1.0,
+      "metrics": {
+        "patch_id": "patch_retry_policy",
+        "total_runs": 50,
+        "correct_completion": [
+          1.0,
+          0.9287,
+          1.0
+        ],
+        "duplicate_action_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "silent_failure_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "conditional_false_success_rate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "legitimate_completion_rate": [
+          1.0,
+          0.7847,
+          1.0
+        ],
+        "missed_action_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "incorrect_completion_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "over_suppression_rate": [
+          0.0,
+          0.0,
+          0.0713
+        ],
+        "claim_uncertain_share": 0.0,
+        "mean_steps": 3.22,
+        "mean_tokens": 631.3,
+        "counts": {
+          "correct": 50,
+          "duplicate": 0,
+          "silent_fail": 0,
+          "total": 50,
+          "cond_failed_total": 0
+        }
+      }
+    }
+  },
+  "winning_patch": {
+    "patch_id": "patch_retry_policy",
+    "name": "State-Checked Retry Policy Wrapper",
+    "type": "wrapper.retry_policy",
+    "description": "On timeout/empty-200, looks up a refund recorded under the operation's stable idempotency key before reporting the outcome; retries reuse the same key.",
+    "is_control": false,
+    "config": {}
+  },
+  "heldout_metrics_before": {
+    "patch_id": "baseline_heldout",
+    "total_runs": 30,
+    "correct_completion": [
+      0.7667,
+      0.5907,
+      0.8821
+    ],
+    "duplicate_action_rate": [
+      0.0,
+      0.0,
+      0.1135
+    ],
+    "silent_failure_rate": [
+      0.0667,
+      0.0185,
+      0.2132
+    ],
+    "conditional_false_success_rate": [
+      0.2857,
+      0.0822,
+      0.6411
+    ],
+    "legitimate_completion_rate": [
+      1.0,
+      0.7009,
+      1.0
+    ],
+    "missed_action_rate": [
+      0.0667,
+      0.0185,
+      0.2132
+    ],
+    "incorrect_completion_rate": [
+      0.2333,
+      0.1179,
+      0.4093
+    ],
+    "over_suppression_rate": [
+      0.0,
+      0.0,
+      0.1135
+    ],
+    "claim_uncertain_share": 0.0,
+    "mean_steps": 2.83,
+    "mean_tokens": 586.67,
+    "counts": {
+      "correct": 23,
+      "duplicate": 0,
+      "silent_fail": 2,
+      "total": 30,
+      "cond_failed_total": 7
+    }
+  },
+  "heldout_metrics_after": {
+    "patch_id": "patch_retry_policy",
+    "total_runs": 30,
+    "correct_completion": [
+      1.0,
+      0.8865,
+      1.0
+    ],
+    "duplicate_action_rate": [
+      0.0,
+      0.0,
+      0.1135
+    ],
+    "silent_failure_rate": [
+      0.0,
+      0.0,
+      0.1135
+    ],
+    "conditional_false_success_rate": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "legitimate_completion_rate": [
+      1.0,
+      0.7009,
+      1.0
+    ],
+    "missed_action_rate": [
+      0.0,
+      0.0,
+      0.1135
+    ],
+    "incorrect_completion_rate": [
+      0.0,
+      0.0,
+      0.1135
+    ],
+    "over_suppression_rate": [
+      0.0,
+      0.0,
+      0.1135
+    ],
+    "claim_uncertain_share": 0.0,
+    "mean_steps": 2.9,
+    "mean_tokens": 588.17,
+    "counts": {
+      "correct": 30,
+      "duplicate": 0,
+      "silent_fail": 0,
+      "total": 30,
+      "cond_failed_total": 0
+    }
+  },
+  "sample_failing_record": {
+    "run_id": "run_654ee3a7",
+    "scenario_id": "sc_train_00002",
+    "agent_version": "baseline",
+    "patch_id": null,
+    "events": [
+      {
+        "seq": 1,
+        "type": "tool_request",
+        "tool": "get_order",
+        "args": {
+          "order_id": "2679"
+        },
+        "effect": null,
+        "refund_id": null,
+        "amount": null,
+        "observed": null,
+        "fault": null,
+        "extra": null
+      },
+      {
+        "seq": 2,
+        "type": "tool_response_to_agent",
+        "tool": null,
+        "args": null,
+        "effect": null,
+        "refund_id": null,
+        "amount": null,
+        "observed": {
+          "id": "2679",
+          "status": "delivered",
+          "total": 109.59,
+          "refunded_amount": 0.0,
+          "items": [
+            {
+              "item_id": "item_1",
+              "price": 109.59
+            }
+          ]
+        },
+        "fault": null,
+        "extra": null
+      },
+      {
+        "seq": 3,
+        "type": "tool_request",
+        "tool": "issue_refund",
+        "args": {
+          "order_id": "2679",
+          "amount": 109.59,
+          "idempotency_key": null,
+          "operation_id": "op_2679_req0"
+        },
+        "effect": null,
+        "refund_id": null,
+        "amount": null,
+        "observed": null,
+        "fault": null,
+        "extra": null
+      },
+      {
+        "seq": 4,
+        "type": "world_mutation",
+        "tool": null,
+        "args": null,
+        "effect": "refund_created",
+        "refund_id": "rf_865e7e",
+        "amount": 109.59,
+        "observed": null,
+        "fault": null,
+        "extra": {
+          "order_id": "2679",
+          "amount": 109.59
+        }
+      },
+      {
+        "seq": 5,
+        "type": "tool_response_to_agent",
+        "tool": null,
+        "args": null,
+        "effect": null,
+        "refund_id": null,
+        "amount": null,
+        "observed": {
+          "error": "timeout"
+        },
+        "fault": "timeout_after_success",
+        "extra": null
+      },
+      {
+        "seq": 6,
+        "type": "tool_request",
+        "tool": "issue_refund",
+        "args": {
+          "order_id": "2679",
+          "amount": 109.59,
+          "idempotency_key": null,
+          "operation_id": "op_2679_req0"
+        },
+        "effect": null,
+        "refund_id": null,
+        "amount": null,
+        "observed": null,
+        "fault": null,
+        "extra": null
+      },
+      {
+        "seq": 7,
+        "type": "tool_response_to_agent",
+        "tool": null,
+        "args": null,
+        "effect": null,
+        "refund_id": null,
+        "amount": null,
+        "observed": {
+          "error": "Order already fully refunded or requested amount exceeds remaining balance",
+          "remaining_balance": 0.0
+        },
+        "fault": null,
+        "extra": null
+      }
+    ],
+    "final_message": "Unable to process refund for order 2679.",
+    "final_state": {
+      "refund_count": 1,
+      "refund_total": 109.59,
+      "email_count": 0,
+      "ticket_count": 0,
+      "orders": {
+        "2679": {
+          "id": "2679",
+          "status": "refunded",
+          "total": 109.59,
+          "refunded_amount": 109.59,
+          "items": [
+            {
+              "item_id": "item_1",
+              "price": 109.59
+            }
+          ]
+        }
+      },
+      "refunds": [
+        {
+          "id": "rf_865e7e",
+          "order_id": "2679",
+          "amount": 109.59,
+          "idempotency_key": null,
+          "created_at": 1792809557.3485403
+        }
+      ]
+    },
+    "cost": {
+      "tokens_in": 490,
+      "tokens_out": 160,
+      "tool_calls": 3,
+      "steps": 3
+    }
+  },
+  "scale_and_cost": {
+    "mode": "local_simulation",
+    "scenarios_train": 50,
+    "scenarios_heldout": 30,
+    "candidates_verified": 6,
+    "verification_runs": 300,
+    "total_episodes_evaluated": 410,
+    "median_seconds_per_episode": 0.0,
+    "measured_wall_clock_sec": 0.2559,
+    "speedup_factor": null,
+    "note": "Measured in local deterministic simulation mode."
+  },
+  "generated_test_code": "\"\"\"\nAuto-generated SilentFail Regression Test. Do not edit by hand.\nRegenerate with the pipeline (see README); it is rendered from the winning PatchSpec in\ndata/latest_pipeline_run.json, and tests/test_pipeline_artifact_sync.py checks they match.\nGuarantees prevention of duplicate refunds after timeouts\nwhile protecting legitimate repeated partial refunds from over-suppression.\n\"\"\"\n\nfrom src.silentfail.models import Scenario, ExpectedOutcome, FaultConfig, PatchSpec\nfrom src.silentfail.runner import EpisodeRunner\n\nWINNING_PATCH = PatchSpec(**{'patch_id': 'patch_retry_policy',\n 'name': 'State-Checked Retry Policy Wrapper',\n 'type': 'wrapper.retry_policy',\n 'description': 'On timeout/empty-200, looks up a refund recorded under the '\n                \"operation's stable idempotency key before reporting the \"\n                'outcome; retries reuse the same key.',\n 'is_control': False,\n 'config': {}})\n\n\ndef test_regression_timeout_duplicate_failure_cured():\n    \"\"\"Hardened patch scenario: winning patch correctly resolves timeout-after-success.\"\"\"\n    scenario = Scenario(\n        scenario_id=\"sc_regression_timeout\",\n        split=\"held_out\",\n        category=\"timeout_after_success\",\n        initial_state={\"orders\": [{\"id\": \"8812\", \"status\": \"delivered\", \"total\": 85.0, \"refunded_amount\": 0.0}]},\n        customer_message=\"Please refund $42.50 for order 8812, package arrived broken.\",\n        faults=[FaultConfig(tool=\"issue_refund\", call_index=0, type=\"timeout_after_success\")],\n        expected_outcome=ExpectedOutcome(refund_count=1, refund_total=42.5, email_count=1)\n    )\n\n    # 1. Baseline run: operation_id prevents silent duplicate; exactly one refund is recorded.\n    base_res = EpisodeRunner.run_episode(scenario, patch=None)\n    assert base_res[\"record\"].final_state[\"refund_count\"] == 1\n\n    # 2. Hardened agent must prevent duplicate and succeed cleanly\n    patched_res = EpisodeRunner.run_episode(scenario, patch=WINNING_PATCH)\n    assert patched_res[\"detection\"].duplicate_action is False\n    assert patched_res[\"record\"].final_state[\"refund_count\"] == 1\n    assert patched_res[\"is_correct\"] is True\n\n\ndef test_legitimate_repeat_is_not_oversuppressed():\n    \"\"\"Legitimate partial refunds scenario: verifies patch does not over-suppress valid repeats.\"\"\"\n    scenario = Scenario(\n        scenario_id=\"sc_legit_repeat_guard\",\n        split=\"held_out\",\n        category=\"legitimate_repeat\",\n        initial_state={\"orders\": [{\"id\": \"9933\", \"status\": \"delivered\", \"total\": 90.0, \"refunded_amount\": 0.0}]},\n        customer_message=\"Please refund items 1 and 2 for order 9933 as two valid partial refunds.\",\n        faults=[],\n        expected_outcome=ExpectedOutcome(refund_count=2, refund_total=90.0, email_count=1)\n    )\n\n    patched_res = EpisodeRunner.run_episode(scenario, patch=WINNING_PATCH)\n    assert patched_res[\"record\"].final_state[\"refund_count\"] == 2\n    assert patched_res[\"detection\"].over_suppression is False\n    assert patched_res[\"is_correct\"] is True\n",
+  "proposal_metadata": {
+    "source": "deterministic_fallback",
+    "model": null,
+    "model_outcome": "not_attempted",
+    "raw_proposals_count": 0,
+    "accepted_candidates_count": 0,
+    "fallback_candidates_count": 6,
+    "rejected_proposals": [],
+    "error": null,
+    "parse_error": null
+  },
+  "provenance": {
+    "base_commit": "63d3e9755742c3daf97e5a173bd96e4164a9dce0",
+    "is_dirty_working_tree": true,
+    "working_tree_diff_sha256": "09a52c9d380636264290348e6cd4150a99bee7fbf3ff45659e14b613ed74ef53",
+    "source_file_sha256": {
+      "src/silentfail\\agent.py": "4efe9d6d041554d210caa1ba45e591edcabdef80d4607d3bb7409123b06ff83a",
+      "src/silentfail\\dashboard.py": "c16b1390b457586ec6264b7ce2644970d5d7ed306857f1f616aefb4dc0ad2d3f",
+      "src/silentfail\\detectors.py": "63f3c153e5ddf6c8884c7afe860682ce7920b20e3bed04748fa44542f15c49a4",
+      "src/silentfail\\ledger.py": "468eaecd8cd28936bd4fcc8995ce295e58cc6a8270ab29f1b8b6d0da2fc60646",
+      "src/silentfail\\models.py": "eb4b60cff4eb8e8e4a636a35884f90786cac653e42cab9f22753489df6a5a999",
+      "src/silentfail\\nebius.py": "1cd7ee1145d8913ef2f5a729470305bd2cf40626bd188de02a92fb1189b555af",
+      "src/silentfail\\orchestrator.py": "cde4121c28aa633dfebf4ac396c6dd92f0c5a8101b8783f6090c864ba5079f96",
+      "src/silentfail\\patches.py": "c7edcbd7d94212ef28b7f850918326f2fa6ddb6388921cc2eb00fe0a659a1971",
+      "src/silentfail\\runner.py": "2b74d264fa9d0afc5897a028364ffc0abedb22eec3d0d07664af6e3768cd1f9f",
+      "src/silentfail\\scenarios.py": "c73d8b716c9f3c0eb7ab2c3e0a2cba394ca638bbfb431a9545399ede86ce8124",
+      "src/silentfail\\tools.py": "bb0f72c046a62a3b2c34e23368df760b107b9039c4aed78f8a70768103a0ff1d"
+    },
+    "evaluation_mode": "local_simulation",
+    "evaluation_command": "py -3.11 -m src.silentfail.orchestrator (run_full_pipeline)",
+    "scenario_suite_config": {
+      "train_count": 50,
+      "held_out_count": 30,
+      "base_seed": 42,
+      "held_out_seed_offset": 5000,
+      "train_suite_sha256": "a41e1b9ed0493077d397df6a9c734b0aaaab97505716d23043af663e18d93bff",
+      "heldout_suite_sha256": "e36f6c018e6eb526edf8c952ef174024498f002f7f53cf29111b23e0e32e7dcc"
+    },
+    "agent_configuration": {
+      "type": "NaiveRefundAgent",
+      "refund_intent_rule": "Option 2: 100% remaining balance on general request, explicit amounts honored on matching dollar/dollars patterns, order_id boundary protection, remaining balance capping.",
+      "max_retries": 2
+    },
+    "winning_patch": {
+      "patch_id": "patch_retry_policy",
+      "name": "State-Checked Retry Policy Wrapper",
+      "type": "wrapper.retry_policy",
+      "description": "On timeout/empty-200, looks up a refund recorded under the operation's stable idempotency key before reporting the outcome; retries reuse the same key.",
+      "is_control": false,
+      "config": {}
+    }
+  }
+}
